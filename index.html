@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Union — Детейлинг и Химчистка</title>
+  <link rel="icon" href="img/logo2.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo2.png" alt="Detail Union">
+      <span>Detail Union</span>
+    </div>
+    <nav>
+      <a href="#services" data-i18n="nav.services">Услуги</a>
+      <a href="#gallery" data-i18n="nav.gallery">Работы</a>
+      <a href="#prices" data-i18n="nav.prices">Цены</a>
+      <a href="#booking" data-i18n="nav.booking">Запись</a>
+      <a href="#clean-union" data-i18n="nav.clean_union">Clean Union</a>
+    </nav>
+
+    <div class="lang-switcher">
+    <select id="languageSelect" onchange="changeLanguage(this.value)">
+      <option value="ru">Рус</option>
+      <option value="lv">Lat</option>
+      <option value="en">Eng</option>
+    </select>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1 data-i18n="hero.title">Чистота, Блеск, Уход</h1>
+      <p data-i18n="hero.subtitle">Мобильный детейлинг и химчистка прямо у вас под окном</p>
+      <a href="https://wa.me/37128652023" class="btn" data-i18n="hero.button">Записаться в WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+  <h2 data-i18n="services.title">Наши услуги</h2>
+  <div class="service-grid">
+    <a href="moyka.html" class="service-item wash-bg">
+      <div class="service-overlay">
+        <h3 data-i18n="services.wash">Мойка кузова</h3>
+        <p data-i18n="services.wash_desc">Эффективная бесконтактная мойка с профессиональной пеной и защитой.</p>
+      </div>
+    </a>
+
+    <a href="himchistka.html" class="service-item chem-bg">
+      <div class="service-overlay">
+        <h3 data-i18n="services.interior">Полная химчистка</h3>
+        <p data-i18n="services.interior_desc">Глубокая чистка салона, удаление пятен, запахов и бактерий.</p>
+      </div>
+    </a>
+
+    <a href="polirovka.html" class="service-item polirovka-bg">
+      <div class="service-overlay">
+        <h3 data-i18n="services.polishing">Полировка</h3>
+        <p data-i18n="services.polishing_desc">Удаление царапин, возвращение блеска, защита покрытия.</p>
+      </div>
+    </a>
+
+    <a href="zaschita.html" class="service-item ceramic-bg">
+      <div class="service-overlay">
+        <h3 data-i18n="services.protection">Защита кузова</h3>
+        <p data-i18n="services.protection_desc">Керамика, воск и другие составы для долгого блеска и защиты от внешней среды.</p>
+      </div>
+    </a>
+
+    <a href="zapah.html" class="service-item ozonator-bg">
+      <div class="service-overlay">
+        <h3 data-i18n="services.odor">Удаление запахов</h3>
+        <p data-i18n="services.odor_desc">Озонация и профессиональная обработка для свежего воздуха в салоне.</p>
+      </div>
+    </a>
+
+    <a href="headlights.html" class="service-item fari-bg">
+      <div class="service-overlay">
+        <h3 data-i18n="services.headlights">Полировка фар</h3>
+        <p data-i18n="services.headlights_desc">Восстановим прозрачность и блеск фар. Безопасность и эстетика на дороге.</p>
+      </div>
+    </a>
+
+    <a href="antirain.html" class="service-item antirain-bg">
+      <div class="service-overlay">
+        <h3 data-i18n="services.antirain">Антидождь</h3>
+        <p data-i18n="services.antirain_desc">Наносим водоотталкивающее покрытие, улучшающее видимость в дождь.</p>
+      </div>
+    </a>
+
+    <a href="prep.html" class="service-item presell-bg">
+      <div class="service-overlay">
+        <h3 data-i18n="services.presale">Предпродажная подготовка</h3>
+        <p data-i18n="services.presale_desc">Комплексная чистка и уход для повышения привлекательности авто перед продажей.</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<section id="gallery" class="gallery">
+  <h2 data-i18n="gallery.title">Фото наших работ</h2>
+  <div class="car-block">
+    <div class="car-slider">
+      <img src="img/front.jpg" alt="car photo" class="car-slide active" />
+      <img src="img/front2.jpg" alt="car photo" class="car-slide" />
+      <img src="img/up.jpg" alt="car photo" class="car-slide" />
+      <img src="img/side.jpg" alt="car photo" class="car-slide" />
+      <img src="img/side2.jpg" alt="car photo" class="car-slide" />
+      <img src="img/side3.jpg" alt="car photo" class="car-slide" />
+      <img src="img/back.jpg" alt="car photo" class="car-slide" />
+      <button class="slide-btn left" onclick="changeSlide(-1, this)">←</button>
+      <button class="slide-btn right" onclick="changeSlide(1, this)">→</button>
+    </div>
+    <p class="car-title">GOLF 4</p>
+  </div>
+</section>
+
+<section id="prices" class="price-section">
+  <h2 data-i18n="prices.title">Цены</h2>
+  <div class="price-grid">
+    <div class="price-card">
+      <h3 data-i18n="services.wash">Мойка кузова</h3>
+      <p class="price">от 10 €</p>
+    </div>
+    <div class="price-card">
+      <h3 data-i18n="services.interior">Химчистка салона</h3>
+      <p class="price">от  40 €</p>
+    </div>
+    <div class="price-card">
+      <h3 data-i18n="services.polishing">Полировка кузова</h3>
+      <p class="price">от 120 €</p>
+    </div>
+    <div class="price-card">
+      <h3 data-i18n="services.protection">Защита кузова</h3>
+      <p class="price">от 100 €</p>
+    </div>
+    <div class="price-card">
+      <h3 data-i18n="services.odor">Удаление запахов</h3>
+      <p class="price">от 30 €</p>
+    </div>
+    <div class="price-card">
+      <h3 data-i18n="services.headlights">Полировка фар</h3>
+      <p class="price">от 20 €</p>
+    </div>
+    <div class="price-card">
+      <h3 data-i18n="services.antirain">Антидождь</h3>
+      <p class="price">от 10 €</p>
+    </div>
+    <div class="price-card">
+      <h3 data-i18n="services.presale">Предпродажная подготовка</h3>
+      <p class="price">от 50 €</p>
+    </div>
+  </div>
+</section>
+
+<section class="booking-section" id="booking">
+  <div class="booking-form">
+    <h2 data-i18n="booking.title">Запись</h2>
+    <form id="bookingForm">
+      <label for="name" data-i18n="form.name">Имя</label>
+      <input type="text" name="name" id="name" required>
+
+      <label for="phone" data-i18n="form.phone">Телефон</label>
+      <input type="tel" name="phone" id="phone" required>
+
+      <label for="car" data-i18n="form.car">Марка авто</label>
+      <input type="text" name="car" id="car" required>
+
+      <button type="submit" data-i18n="form.submit">Отправить</button>
+    </form>
+  </div>
+</section>
+
+<section id="clean-union" class="clean-union-section">
+  <div class="clean-union-content">
+    <div class="clean-union-text">
+      <h2 data-i18n="clean_union.title">Clean Union</h2>
+      <p data-i18n="clean_union.text">Вторая компания группы Detail Union, специализирующаяся на <strong>профессиональной химчистке мягкой мебели, матрасов и ковров</strong> прямо у вас дома.</p>
+      <ul>
+        <li data-i18n="clean_union.li1">Выезд в удобное для вас время</li>
+        <li data-i18n="clean_union.li2">Безопасные и гипоаллергенные моющие средства</li>
+        <li data-i18n="clean_union.li3">Глубокая очистка от пятен, запахов, пыли и аллергенов</li>
+        <li data-i18n="clean_union.li4">Подходит для семей с детьми и животными</li>
+      </ul>
+      <a href="#booking" class="btn" data-i18n="clean_union.button">Записаться на выезд</a>
+    </div>
+    <div class="clean-union-logo">
+      <img src="img/20.png" alt="Clean Union">
+    </div>
+  </div>
+</section>
+
+<section id="contacts" class="contact-section">
+  <div class="contact-container">
+    <div class="contact-info">
+      <h3 data-i18n="contacts.title">Контакты</h3>
+      <p><strong data-i18n="contacts.address_label">Адрес:</strong> Balvu iela 1C-k-305a, Daugavpils, LV-5401</p>
+      <p><strong data-i18n="contacts.phone_label">Телефон:</strong> <a href="tel:+37128652023">+371 286 52023</a></p>
+      <p><strong data-i18n="contacts.whatsapp_label">WhatsApp:</strong> <a href="https://wa.me/37128652023" target="_blank" data-i18n="contacts.whatsapp_link">Написать в WhatsApp</a></p>
+      <p><strong data-i18n="contacts.email_label">Email:</strong> <a href="mailto:info@detailunion.lv">info@detailunion.lv</a></p>
+    </div>
+    <div class="map-container">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2192.156280151385!2d26.5313659!3d55.883139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46cd7645380be0c7%3A0x36c4907fd1e16f27!2sBalvu%20iela%201C%2C%20Daugavpils%2C%20LV-5401!5e0!3m2!1sru!2slv!4v1721049211560!5m2!1sru!2slv" 
+        width="100%" 
+        height="250" 
+        style="border:0; border-radius:12px;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+      <br>
+      <a href="https://www.google.com/maps/dir/?api=1&destination=Balvu+iela+1C%2C+Daugavpils%2C+LV-5401" target="_blank" class="map-button" data-i18n="map.route">
+        Построить маршрут
+      </a>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <footer>
+    <p>&copy; 2025 Detail Union</p>
+    <div class="social-media">
+
+      <a href="https://www.instagram.com/clean_union/">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61576771934951">Facebook</a>
+    </div>
+  </footer>
+
+  <div id="success-popup" style="
+  display: none;
+  position: fixed;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #4BB543;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-weight: bold;
+  z-index: 1000;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+">
+  ✅ Спасибо! Ваша заявка получена. Мы скоро свяжемся с вами.
+</div>
+
+<script>
+function changeSlide(direction, btn) {
+  const slider = btn.closest('.car-slider');
+  const slides = slider.querySelectorAll('.car-slide');
+  let index = Array.from(slides).findIndex(s => s.classList.contains('active'));
+  if (index === -1) index = 0;
+  slides[index].classList.remove('active');
+  index = (index + direction + slides.length) % slides.length;
+  slides[index].classList.add('active');
+}
+</script>
+
+
+<script>
+  const translations = {
+    ru: {
+      "nav.services": "Услуги",
+      "nav.gallery": "Работы",
+      "nav.prices": "Цены",
+      "nav.booking": "Запись",
+      "nav.clean_union": "Clean Union",
+
+      "hero.title": "Чистота, Блеск, Уход",
+      "hero.subtitle": "Мобильный детейлинг и химчистка прямо у вас под окном",
+      "hero.button": "Записаться в WhatsApp",
+      "services.title": "Наши услуги",
+      "services.wash": "Мойка кузова",
+      "services.wash_desc": "Эффективная бесконтактная мойка с профессиональной пеной и защитой.",
+      "services.interior": "Полная химчистка",
+      "services.interior_desc": "Глубокая чистка салона, удаление пятен, запахов и бактерий.",
+      "services.polishing": "Полировка",
+      "services.polishing_desc": "Удаление царапин, возвращение блеска, защита покрытия.",
+      "services.protection": "Защита кузова",
+      "services.protection_desc": "Керамика, воск и другие составы для долгого блеска и защиты от внешней среды.",
+      "services.odor": "Удаление запахов",
+      "services.odor_desc": "Озонация и профессиональная обработка для свежего воздуха в салоне.",
+      "services.headlights": "Полировка фар",
+      "services.headlights_desc": "Восстановим прозрачность и блеск фар. Безопасность и эстетика на дороге.",
+      "services.antirain": "Антидождь",
+      "services.antirain_desc": "Наносим водоотталкивающее покрытие, улучшающее видимость в дождь.",
+      "services.presale": "Предпродажная подготовка",
+      "services.presale_desc": "Комплексная чистка и уход для повышения привлекательности авто перед продажей.",
+      "gallery.title": "Фото наших работ",
+      "prices.title": "Цены",
+      "booking.title": "Запись",
+      "form.name": "Имя",
+      "form.phone": "Телефон",
+      "form.car": "Марка авто",
+      "form.submit": "Отправить",
+      "clean_union.title": "Clean Union",
+      "clean_union.text": "Вторая компания группы Detail Union, специализирующаяся на профессиональной химчистке мягкой мебели, матрасов и ковров прямо у вас дома.",
+      "clean_union.li1": "Выезд в удобное для вас время",
+      "clean_union.li2": "Безопасные и гипоаллергенные моющие средства",
+      "clean_union.li3": "Глубокая очистка от пятен, запахов, пыли и аллергенов",
+      "clean_union.li4": "Подходит для семей с детьми и животными",
+      "clean_union.button": "Записаться на выезд",
+      "contacts.title": "Контакты",
+      "contacts.address_label": "Адрес:",
+      "contacts.phone_label": "Телефон:",
+      "contacts.whatsapp_label": "WhatsApp:",
+      "contacts.whatsapp_link": "Написать в WhatsApp",
+      "contacts.email_label": "Email:",
+      "map.route": "Построить маршрут"
+    },
+    lv: {
+
+      "nav.services": "Pakalpojumi",
+"nav.gallery": "Darbi",
+"nav.prices": "Cenas",
+"nav.booking": "Pieraksts",
+"nav.clean_union": "Clean Union",
+
+"hero.title": "Tīrība, Spīdums, Kopšana",
+"hero.subtitle": "Mobilais detaļings un salona tīrīšana pie jūsu loga",
+"hero.button": "Pieteikties WhatsApp",
+      "services.title": "Mūsu pakalpojumi",
+      "services.wash": "Virsbūves mazgāšana",
+      "services.wash_desc": "Efektīva bezkontakta mazgāšana ar profesionālām putām un aizsardzību.",
+      "services.interior": "Pilna salona tīrīšana",
+      "services.interior_desc": "Dziļa tīrīšana, traipu, smaku un baktēriju noņemšana.",
+      "services.polishing": "Pulēšana",
+      "services.polishing_desc": "Skrāpējumu noņemšana, spīduma atjaunošana, pārklājuma aizsardzība.",
+      "services.protection": "Virsbūves aizsardzība",
+      "services.protection_desc": "Keramika, vasks un citi pārklājumi ilgstošam spīdumam un aizsardzībai.",
+      "services.odor": "Smaku noņemšana",
+      "services.odor_desc": "Ozonēšana un profesionāla apstrāde svaigam gaisam salonā.",
+      "services.headlights": "Lukturu pulēšana",
+      "services.headlights_desc": "Lukturu caurspīdīguma un spīduma atjaunošana.",
+      "services.antirain": "Pretlietus pārklājums",
+      "services.antirain_desc": "Ūdeni atgrūdošs pārklājums redzamības uzlabošanai lietū.",
+      "services.presale": "Pārdošanas sagatavošana",
+      "services.presale_desc": "Kompleksa tīrīšana un kopšana automašīnas pārdošanai.",
+      "gallery.title": "Mūsu darbu foto",
+      "prices.title": "Cenas",
+      "booking.title": "Pieraksts",
+      "form.name": "Vārds",
+      "form.phone": "Telefons",
+      "form.car": "Auto marka",
+      "form.submit": "Nosūtīt",
+      "clean_union.title": "Clean Union",
+      "clean_union.text": "Otra uzņēmuma daļa, kas specializējas uz mēbeļu un matraču tīrīšanu pie jums mājās.",
+      "clean_union.li1": "Ierašanās jums ērtā laikā",
+      "clean_union.li2": "Droši un hipoalerģiski tīrīšanas līdzekļi",
+      "clean_union.li3": "Dziļa tīrīšana no traipiem, smakām, putekļiem un alergēniem",
+      "clean_union.li4": "Piemērots ģimenēm ar bērniem un mājdzīvniekiem",
+      "clean_union.button": "Pieteikt izsaukumu",
+      "contacts.title": "Kontakti",
+      "contacts.address_label": "Adrese:",
+      "contacts.phone_label": "Telefons:",
+      "contacts.whatsapp_label": "WhatsApp:",
+      "contacts.whatsapp_link": "Rakstīt WhatsApp",
+      "contacts.email_label": "E-pasts:",
+      "map.route": "Maršruts"
+    },
+    en: {
+      "nav.services": "Services",
+"nav.gallery": "Works",
+"nav.prices": "Prices",
+"nav.booking": "Booking",
+"nav.clean_union": "Clean Union",
+
+"hero.title": "Cleanliness, Shine, Care",
+"hero.subtitle": "Mobile detailing and interior cleaning right outside your window",
+"hero.button": "Book via WhatsApp",
+      "services.title": "Our Services",
+      "services.wash": "Body Wash",
+      "services.wash_desc": "Effective contactless wash with professional foam and protection.",
+      "services.interior": "Full Interior Cleaning",
+      "services.interior_desc": "Deep cleaning, stain, odor, and bacteria removal.",
+      "services.polishing": "Polishing",
+      "services.polishing_desc": "Scratch removal, shine restoration, and surface protection.",
+      "services.protection": "Body Protection",
+      "services.protection_desc": "Ceramic, wax and other coatings for lasting shine and protection.",
+      "services.odor": "Odor Removal",
+      "services.odor_desc": "Ozonation and professional treatment for fresh interior air.",
+      "services.headlights": "Headlight Polishing",
+      "services.headlights_desc": "Restore transparency and shine for safer driving.",
+      "services.antirain": "Anti-Rain",
+      "services.antirain_desc": "Water-repellent coating for better visibility in rain.",
+      "services.presale": "Pre-Sale Preparation",
+      "services.presale_desc": "Full detailing to improve the car’s appearance before selling.",
+      "gallery.title": "Our Work Photos",
+      "prices.title": "Prices",
+      "booking.title": "Booking",
+      "form.name": "Name",
+      "form.phone": "Phone",
+      "form.car": "Car Brand",
+      "form.submit": "Send",
+      "clean_union.title": "Clean Union",
+      "clean_union.text": "The second company of Detail Union, specializing in professional upholstery, mattress and carpet cleaning at home.",
+      "clean_union.li1": "Visit at your convenient time",
+      "clean_union.li2": "Safe and hypoallergenic cleaning products",
+      "clean_union.li3": "Deep stain, odor, dust and allergen removal",
+      "clean_union.li4": "Suitable for families with kids and pets",
+      "clean_union.button": "Book a visit",
+      "contacts.title": "Contacts",
+      "contacts.address_label": "Address:",
+      "contacts.phone_label": "Phone:",
+      "contacts.whatsapp_label": "WhatsApp:",
+      "contacts.whatsapp_link": "Message via WhatsApp",
+      "contacts.email_label": "Email:",
+      "map.route": "Get Directions"
+    }
+  };
+
+  function updateLanguage(lang) {
+    document.querySelectorAll("[data-i18n]").forEach(el => {
+      const key = el.getAttribute("data-i18n");
+      const value = translations[lang][key];
+      if (value) el.innerHTML = value;
+    });
+  }
+
+  function changeLanguage(lang) {
+    updateLanguage(lang);
+    localStorage.setItem("preferredLang", lang);
+  }
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const savedLang = localStorage.getItem("preferredLang") || "ru";
+    const langSelect = document.getElementById("languageSelect");
+    if (langSelect) langSelect.value = savedLang;
+    updateLanguage(savedLang);
+  });
+</script> 
+</body>
+</html>
+
+
+<script>
+document.getElementById("bookingForm").addEventListener("submit", function (e) {
+  e.preventDefault();
+
+  const name = document.getElementById("name").value;
+  const phone = document.getElementById("phone").value;
+  const car = document.getElementById("car").value;
+
+  const token = "8095084706:AAHOxPxszSZCBXFrMyKcA7okXK_LfgzMDVE"; 
+  const chat_id = "461512842"; 
+  const message = `
+<b>📥 Новая заявка:</b>\n
+👤 Имя: ${name}
+📞 Телефон: ${phone}
+🚗 Марка авто: ${car}
+`;
+
+  fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      chat_id: chat_id,
+      text: message,
+      parse_mode: "HTML"
+    }),
+  })
+    .then((response) => {
+      if (response.ok) {
+        document.getElementById("bookingForm").reset();
+        showSuccessPopup();
+      } else {
+        alert("Ошибка при отправке. Попробуйте ещё раз.");
+      }
+    })
+    .catch((error) => {
+      alert("Ошибка подключения к Telegram.");
+      console.error("Ошибка:", error);
+    });
+});
+
+  function showSuccessPopup() {
+  const popup = document.getElementById("success-popup");
+  popup.style.display = "block";
+  setTimeout(() => {
+    popup.style.display = "none";
+  }, 4000);
+}
+</script>

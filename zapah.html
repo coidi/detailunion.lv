@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="page.title">Удаление запахов — Detail Union</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="img/logo2.png" alt="Detail Union" />
+      <span>Detail Union</span>
+    </div>
+    <nav>
+      <a href="index.html" data-i18n="nav.home">На главную</a>
+    </nav>
+  </header>
+
+  <section class="service-detail">
+    <a href="index.html" class="back-link" data-i18n="nav.back">← На главную</a>
+
+    <div class="header-with-image">
+      <div class="header-text">
+        <h1 data-i18n="smell.title">Удаление запахов</h1>
+        <p class="subtitle" data-i18n="smell.subtitle">
+          Запах сигарет, плесени или животных? Мы используем озонаторы и специальные средства, чтобы удалить даже стойкие запахи из салона автомобиля.
+        </p>
+      </div>
+      <div class="header-img">
+        <img src="img/ozonator.png" alt="Удаление запахов">
+      </div>
+    </div>
+
+    <div class="info-grid">
+      <div class="info-block">
+        <h2 data-i18n="smell.why_title">Зачем это нужно?</h2>
+        <p data-i18n="smell.why_text">
+          Запахи не только неприятны, но и вредны для здоровья. Они впитываются в ткани, пластик, кондиционер. Мы устраняем причину, а не маскируем её.
+        </p>
+      </div>
+
+      <div class="info-block">
+        <h2 data-i18n="smell.how_often_title">Как часто?</h2>
+        <p data-i18n="smell.how_often_text">
+          После покупки подержанного авто, перевозки животных, курения в салоне, либо 1–2 раза в год в рамках комплексной чистки.
+        </p>
+      </div>
+    </div>
+
+    <div class="animated-steps">
+      <h2 data-i18n="smell.steps_title">Процесс очистки</h2>
+      <div class="step-boxes">
+        <div class="step" data-i18n="smell.step1">1. Обработка салона паром</div>
+        <div class="step" data-i18n="smell.step2">2. Озонация генератором</div>
+        <div class="step" data-i18n="smell.step3">3. Дезинфекция вентиляции</div>
+        <div class="step" data-i18n="smell.step4">4. Проветривание и финальный контроль</div>
+      </div>
+    </div>
+
+    <div class="examples">
+      <h2 data-i18n="smell.examples_title">До/после</h2>
+      <div class="gallery">
+        <img src="img/smell_before.jpg" alt="до удаления запаха">
+        <img src="img/smell_after.jpg" alt="после удаления запаха">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Detail Union</p>
+  </footer>
+
+  <script>
+    const translations = {
+      lv: {
+        "page.title": "Smaku noņemšana — Detail Union",
+        "nav.home": "Uz sākumlapu",
+        "nav.back": "← Uz sākumlapu",
+        "smell.title": "Smaku noņemšana",
+        "smell.subtitle": "Cigarešu, pelējuma vai mājdzīvnieku smakas? Mēs izmantojam ozonatorus un īpašus līdzekļus, lai noņemtu pat noturīgākās smakas.",
+        "smell.why_title": "Kāpēc tas vajadzīgs?",
+        "smell.why_text": "Smakas ne tikai rada diskomfortu, bet arī kaitē veselībai. Tās uzsūcas materiālos un ventilācijā. Mēs noņemam cēloni, nevis maskējam.",
+        "smell.how_often_title": "Cik bieži?",
+        "smell.how_often_text": "Pēc auto iegādes, smēķēšanas salonā, dzīvnieku pārvadāšanas vai reizi 1–2 gados.",
+        "smell.steps_title": "Attīrīšanas process",
+        "smell.step1": "1. Salona apstrāde ar tvaiku",
+        "smell.step2": "2. Ozonēšana ar ģeneratoru",
+        "smell.step3": "3. Ventilācijas dezinfekcija",
+        "smell.step4": "4. Vēdināšana un kontrole",
+        "smell.examples_title": "Pirms / Pēc"
+      },
+      en: {
+        "page.title": "Odor Removal — Detail Union",
+        "nav.home": "Home",
+        "nav.back": "← Back to Home",
+        "smell.title": "Odor Removal",
+        "smell.subtitle": "Cigarette, mold, or pet smells? We use ozone machines and special products to eliminate even strong odors from your car.",
+        "smell.why_title": "Why do it?",
+        "smell.why_text": "Odors are not only unpleasant — they can be harmful. They stick in fabrics, plastics, and AC. We eliminate the cause, not just cover it.",
+        "smell.how_often_title": "How often?",
+        "smell.how_often_text": "After buying a used car, transporting pets, smoking, or 1–2 times a year during deep cleaning.",
+        "smell.steps_title": "Cleaning process",
+        "smell.step1": "1. Steam interior cleaning",
+        "smell.step2": "2. Ozone generator treatment",
+        "smell.step3": "3. Ventilation disinfection",
+        "smell.step4": "4. Airing and final check",
+        "smell.examples_title": "Before / After"
+      }
+    };
+
+    function updateLanguage(lang) {
+      document.querySelectorAll("[data-i18n]").forEach(el => {
+        const key = el.getAttribute("data-i18n");
+        if (translations[lang]?.[key]) {
+          el.textContent = translations[lang][key];
+        }
+      });
+      if (translations[lang]?.["page.title"]) {
+        document.title = translations[lang]["page.title"];
+      }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const savedLang = localStorage.getItem("preferredLang") || "ru";
+      updateLanguage(savedLang);
+    });
+  </script>
+</body>
+</html>
