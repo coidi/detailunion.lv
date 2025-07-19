@@ -21,206 +21,166 @@
       <a href="#booking" data-i18n="nav.booking">Запись</a>
       <a href="#clean-union" data-i18n="nav.clean_union">Clean Union</a>
     </nav>
-
     <div class="lang-switcher">
-    <select id="languageSelect" onchange="changeLanguage(this.value)">
-      <option value="ru">Рус</option>
-      <option value="lv">Lat</option>
-      <option value="en">Eng</option>
-    </select>
+      <select id="languageSelect" onchange="changeLanguage(this.value)">
+        <option value="ru">Рус</option>
+        <option value="lv">Lat</option>
+        <option value="en">Eng</option>
+      </select>
     </div>
   </header>
 
   <section class="hero">
     <div class="hero-content">
       <h1 data-i18n="hero.title">Чистота, Блеск, Уход</h1>
-      <p data-i18n="hero.subtitle">Мобильный детейлинг и химчистка прямо у вас под окном</p>
+      <p data-i18n="hero.subtitle">Профессиональный детейлинг центр для вашего авто!</p>
       <a href="https://wa.me/37128652023" class="btn" data-i18n="hero.button">Записаться в WhatsApp</a>
     </div>
   </section>
 
   <section id="services" class="services">
-  <h2 data-i18n="services.title">Наши услуги</h2>
-  <div class="service-grid">
-    <a href="moyka.html" class="service-item wash-bg">
-      <div class="service-overlay">
-        <h3 data-i18n="services.wash">Мойка кузова</h3>
-        <p data-i18n="services.wash_desc">Эффективная бесконтактная мойка с профессиональной пеной и защитой.</p>
-      </div>
-    </a>
-
-    <a href="himchistka.html" class="service-item chem-bg">
-      <div class="service-overlay">
-        <h3 data-i18n="services.interior">Полная химчистка</h3>
-        <p data-i18n="services.interior_desc">Глубокая чистка салона, удаление пятен, запахов и бактерий.</p>
-      </div>
-    </a>
-
-    <a href="polirovka.html" class="service-item polirovka-bg">
-      <div class="service-overlay">
-        <h3 data-i18n="services.polishing">Полировка</h3>
-        <p data-i18n="services.polishing_desc">Удаление царапин, возвращение блеска, защита покрытия.</p>
-      </div>
-    </a>
-
-    <a href="zaschita.html" class="service-item ceramic-bg">
-      <div class="service-overlay">
-        <h3 data-i18n="services.protection">Защита кузова</h3>
-        <p data-i18n="services.protection_desc">Керамика, воск и другие составы для долгого блеска и защиты от внешней среды.</p>
-      </div>
-    </a>
-
-    <a href="zapah.html" class="service-item ozonator-bg">
-      <div class="service-overlay">
-        <h3 data-i18n="services.odor">Удаление запахов</h3>
-        <p data-i18n="services.odor_desc">Озонация и профессиональная обработка для свежего воздуха в салоне.</p>
-      </div>
-    </a>
-
-    <a href="headlights.html" class="service-item fari-bg">
-      <div class="service-overlay">
-        <h3 data-i18n="services.headlights">Полировка фар</h3>
-        <p data-i18n="services.headlights_desc">Восстановим прозрачность и блеск фар. Безопасность и эстетика на дороге.</p>
-      </div>
-    </a>
-
-    <a href="antirain.html" class="service-item antirain-bg">
-      <div class="service-overlay">
-        <h3 data-i18n="services.antirain">Антидождь</h3>
-        <p data-i18n="services.antirain_desc">Наносим водоотталкивающее покрытие, улучшающее видимость в дождь.</p>
-      </div>
-    </a>
-
-    <a href="prep.html" class="service-item presell-bg">
-      <div class="service-overlay">
-        <h3 data-i18n="services.presale">Предпродажная подготовка</h3>
-        <p data-i18n="services.presale_desc">Комплексная чистка и уход для повышения привлекательности авто перед продажей.</p>
-      </div>
-    </a>
-  </div>
-</section>
-
-<section id="gallery" class="gallery">
-  <h2 data-i18n="gallery.title">Фото наших работ</h2>
-  <div class="car-block">
-    <div class="car-slider">
-      <img src="img/front.jpg" alt="car photo" class="car-slide active" />
-      <img src="img/front2.jpg" alt="car photo" class="car-slide" />
-      <img src="img/up.jpg" alt="car photo" class="car-slide" />
-      <img src="img/side.jpg" alt="car photo" class="car-slide" />
-      <img src="img/side2.jpg" alt="car photo" class="car-slide" />
-      <img src="img/side3.jpg" alt="car photo" class="car-slide" />
-      <img src="img/back.jpg" alt="car photo" class="car-slide" />
-      <button class="slide-btn left" onclick="changeSlide(-1, this)">←</button>
-      <button class="slide-btn right" onclick="changeSlide(1, this)">→</button>
-    </div>
-    <p class="car-title">GOLF 4</p>
-  </div>
-</section>
-
-<section id="prices" class="price-section">
-  <h2 data-i18n="prices.title">Цены</h2>
-  <div class="price-grid">
-    <div class="price-card">
-      <h3 data-i18n="services.wash">Мойка кузова</h3>
-      <p class="price">от 10 €</p>
-    </div>
-    <div class="price-card">
-      <h3 data-i18n="services.interior">Химчистка салона</h3>
-      <p class="price">от  40 €</p>
-    </div>
-    <div class="price-card">
-      <h3 data-i18n="services.polishing">Полировка кузова</h3>
-      <p class="price">от 120 €</p>
-    </div>
-    <div class="price-card">
-      <h3 data-i18n="services.protection">Защита кузова</h3>
-      <p class="price">от 100 €</p>
-    </div>
-    <div class="price-card">
-      <h3 data-i18n="services.odor">Удаление запахов</h3>
-      <p class="price">от 30 €</p>
-    </div>
-    <div class="price-card">
-      <h3 data-i18n="services.headlights">Полировка фар</h3>
-      <p class="price">от 20 €</p>
-    </div>
-    <div class="price-card">
-      <h3 data-i18n="services.antirain">Антидождь</h3>
-      <p class="price">от 10 €</p>
-    </div>
-    <div class="price-card">
-      <h3 data-i18n="services.presale">Предпродажная подготовка</h3>
-      <p class="price">от 50 €</p>
-    </div>
-  </div>
-</section>
-
-<section class="booking-section" id="booking">
-  <div class="booking-form">
-    <h2 data-i18n="booking.title">Запись</h2>
-    <form id="bookingForm">
-      <label for="name" data-i18n="form.name">Имя</label>
-      <input type="text" name="name" id="name" required>
-
-      <label for="phone" data-i18n="form.phone">Телефон</label>
-      <input type="tel" name="phone" id="phone" required>
-
-      <label for="car" data-i18n="form.car">Марка авто</label>
-      <input type="text" name="car" id="car" required>
-
-      <button type="submit" data-i18n="form.submit">Отправить</button>
-    </form>
-  </div>
-</section>
-
-<section id="clean-union" class="clean-union-section">
-  <div class="clean-union-content">
-    <div class="clean-union-text">
-      <h2 data-i18n="clean_union.title">Clean Union</h2>
-      <p data-i18n="clean_union.text">Вторая компания группы Detail Union, специализирующаяся на <strong>профессиональной химчистке мягкой мебели, матрасов и ковров</strong> прямо у вас дома.</p>
-      <ul>
-        <li data-i18n="clean_union.li1">Выезд в удобное для вас время</li>
-        <li data-i18n="clean_union.li2">Безопасные и гипоаллергенные моющие средства</li>
-        <li data-i18n="clean_union.li3">Глубокая очистка от пятен, запахов, пыли и аллергенов</li>
-        <li data-i18n="clean_union.li4">Подходит для семей с детьми и животными</li>
-      </ul>
-      <a href="#booking" class="btn" data-i18n="clean_union.button">Записаться на выезд</a>
-    </div>
-    <div class="clean-union-logo">
-      <img src="img/20.png" alt="Clean Union">
-    </div>
-  </div>
-</section>
-
-<section id="contacts" class="contact-section">
-  <div class="contact-container">
-    <div class="contact-info">
-      <h3 data-i18n="contacts.title">Контакты</h3>
-      <p><strong data-i18n="contacts.address_label">Адрес:</strong> Balvu iela 1C-k-305a, Daugavpils, LV-5401</p>
-      <p><strong data-i18n="contacts.phone_label">Телефон:</strong> <a href="tel:+37128652023">+371 286 52023</a></p>
-      <p><strong data-i18n="contacts.whatsapp_label">WhatsApp:</strong> <a href="https://wa.me/37128652023" target="_blank" data-i18n="contacts.whatsapp_link">Написать в WhatsApp</a></p>
-      <p><strong data-i18n="contacts.email_label">Email:</strong> <a href="mailto:info@detailunion.lv">info@detailunion.lv</a></p>
-    </div>
-    <div class="map-container">
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2192.156280151385!2d26.5313659!3d55.883139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46cd7645380be0c7%3A0x36c4907fd1e16f27!2sBalvu%20iela%201C%2C%20Daugavpils%2C%20LV-5401!5e0!3m2!1sru!2slv!4v1721049211560!5m2!1sru!2slv" 
-        width="100%" 
-        height="250" 
-        style="border:0; border-radius:12px;" 
-        allowfullscreen="" 
-        loading="lazy" 
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-      <br>
-      <a href="https://www.google.com/maps/dir/?api=1&destination=Balvu+iela+1C%2C+Daugavpils%2C+LV-5401" target="_blank" class="map-button" data-i18n="map.route">
-        Построить маршрут
+    <h2 data-i18n="services.title">Наши услуги</h2>
+    <div class="service-grid">
+      <a href="moyka.html" class="service-item wash-bg">
+        <div class="service-overlay">
+          <h3 data-i18n="services.wash">Мойка кузова</h3>
+          <p data-i18n="services.wash_desc">Эффективная бесконтактная мойка с профессиональной пеной и защитой.</p>
+        </div>
+      </a>
+      <a href="himchistka.html" class="service-item chem-bg">
+        <div class="service-overlay">
+          <h3 data-i18n="services.interior">Полная химчистка</h3>
+          <p data-i18n="services.interior_desc">Глубокая чистка салона, удаление пятен, запахов и бактерий.</p>
+        </div>
+      </a>
+      <a href="polirovka.html" class="service-item polirovka-bg">
+        <div class="service-overlay">
+          <h3 data-i18n="services.polishing">Полировка</h3>
+          <p data-i18n="services.polishing_desc">Удаление царапин, возвращение блеска, защита покрытия.</p>
+        </div>
+      </a>
+      <a href="zaschita.html" class="service-item ceramic-bg">
+        <div class="service-overlay">
+          <h3 data-i18n="services.protection">Защита кузова</h3>
+          <p data-i18n="services.protection_desc">Керамика, воск и другие составы для долгого блеска и защиты от внешней среды.</p>
+        </div>
+      </a>
+      <a href="zapah.html" class="service-item ozonator-bg">
+        <div class="service-overlay">
+          <h3 data-i18n="services.odor">Удаление запахов</h3>
+          <p data-i18n="services.odor_desc">Озонация и профессиональная обработка для свежего воздуха в салоне.</p>
+        </div>
+      </a>
+      <a href="headlights.html" class="service-item fari-bg">
+        <div class="service-overlay">
+          <h3 data-i18n="services.headlights">Полировка фар</h3>
+          <p data-i18n="services.headlights_desc">Восстановим прозрачность и блеск фар. Безопасность и эстетика на дороге.</p>
+        </div>
+      </a>
+      <a href="antirain.html" class="service-item antirain-bg">
+        <div class="service-overlay">
+          <h3 data-i18n="services.antirain">Антидождь</h3>
+          <p data-i18n="services.antirain_desc">Наносим водоотталкивающее покрытие, улучшающее видимость в дождь.</p>
+        </div>
+      </a>
+      <a href="prep.html" class="service-item presell-bg">
+        <div class="service-overlay">
+          <h3 data-i18n="services.presale">Предпродажная подготовка</h3>
+          <p data-i18n="services.presale_desc">Комплексная чистка и уход для повышения привлекательности авто перед продажей.</p>
+        </div>
       </a>
     </div>
-  </div>
-</section>
+  </section>
 
+  <section id="gallery" class="gallery">
+    <h2 data-i18n="gallery.title">Фото наших работ</h2>
+    <div class="car-block">
+      <div class="car-slider">
+        <img src="img/front.jpg" class="car-slide active" alt="car photo" />
+        <img src="img/front2.jpg" class="car-slide" alt="car photo" />
+        <img src="img/up.jpg" class="car-slide" alt="car photo" />
+        <img src="img/side.jpg" class="car-slide" alt="car photo" />
+        <img src="img/side2.jpg" class="car-slide" alt="car photo" />
+        <img src="img/side3.jpg" class="car-slide" alt="car photo" />
+        <img src="img/back.jpg" class="car-slide" alt="car photo" />
+        <button class="slide-btn left" onclick="changeSlide(-1, this)">←</button>
+        <button class="slide-btn right" onclick="changeSlide(1, this)">→</button>
+      </div>
+      <p class="car-title">GOLF 4</p>
+    </div>
+  </section>
 
+  <section id="prices" class="price-section">
+    <h2 data-i18n="prices.title">Цены</h2>
+    <div class="price-grid">
+      <div class="price-card"><h3 data-i18n="services.wash">Мойка кузова</h3><p class="price">от 10 €</p></div>
+      <div class="price-card"><h3 data-i18n="services.interior">Химчистка салона</h3><p class="price">от 40 €</p></div>
+      <div class="price-card"><h3 data-i18n="services.polishing">Полировка кузова</h3><p class="price">от 120 €</p></div>
+      <div class="price-card"><h3 data-i18n="services.protection">Защита кузова</h3><p class="price">от 100 €</p></div>
+      <div class="price-card"><h3 data-i18n="services.odor">Удаление запахов</h3><p class="price">от 30 €</p></div>
+      <div class="price-card"><h3 data-i18n="services.headlights">Полировка фар</h3><p class="price">от 20 €</p></div>
+      <div class="price-card"><h3 data-i18n="services.antirain">Антидождь</h3><p class="price">от 10 €</p></div>
+      <div class="price-card"><h3 data-i18n="services.presale">Предпродажная подготовка</h3><p class="price">от 50 €</p></div>
+    </div>
+  </section>
+
+  <section class="booking-section" id="booking">
+    <div class="booking-form">
+      <h2 data-i18n="booking.title">Запись</h2>
+      <form id="bookingForm">
+        <label for="name" data-i18n="form.name">Имя</label>
+        <input type="text" name="name" id="name" required>
+        <label for="phone" data-i18n="form.phone">Телефон</label>
+        <input type="tel" name="phone" id="phone" required>
+        <label for="car" data-i18n="form.car">Марка авто</label>
+        <input type="text" name="car" id="car" required>
+        <button type="submit" data-i18n="form.submit">Отправить</button>
+      </form>
+    </div>
+  </section>
+
+  <section id="clean-union" class="clean-union-section">
+    <div class="clean-union-content">
+      <div class="clean-union-text">
+        <h2 data-i18n="clean_union.title">Clean Union</h2>
+        <p data-i18n="clean_union.text">
+          Вторая компания группы Detail Union, специализирующаяся на <strong>профессиональной химчистке мягкой мебели, матрасов и ковров</strong> прямо у вас дома.
+        </p>
+        <ul>
+          <li data-i18n="clean_union.li1">Выезд в удобное для вас время</li>
+          <li data-i18n="clean_union.li2">Безопасные и гипоаллергенные моющие средства</li>
+          <li data-i18n="clean_union.li3">Глубокая очистка от пятен, запахов, пыли и аллергенов</li>
+          <li data-i18n="clean_union.li4">Подходит для семей с детьми и животными</li>
+        </ul>
+        <a href="#booking" class="btn" data-i18n="clean_union.button">Записаться на выезд</a>
+      </div>
+      <div class="clean-union-logo">
+        <img src="img/20.png" alt="Clean Union">
+      </div>
+    </div>
+  </section>
+
+  <section id="contacts" class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h3 data-i18n="contacts.title">Контакты</h3>
+        <p><strong data-i18n="contacts.address_label">Адрес:</strong> Balvu iela 1C-k-305a, Daugavpils, LV-5401</p>
+        <p><strong data-i18n="contacts.phone_label">Телефон:</strong> <a href="tel:+37128652023">+371 286 52023</a></p>
+        <p><strong data-i18n="contacts.whatsapp_label">WhatsApp:</strong> <a href="https://wa.me/37128652023" target="_blank" data-i18n="contacts.whatsapp_link">Написать в WhatsApp</a></p>
+        <p><strong data-i18n="contacts.email_label">Email:</strong> <a href="mailto:info@detailunion.lv">info@detailunion.lv</a></p>
+      </div>
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2192.156280151385!2d26.5313659!3d55.883139!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46cd7645380be0c7%3A0x36c4907fd1e16f27!2sBalvu%20iela%201C%2C%20Daugavpils%2C%20LV-5401!5e0!3m2!1sru!2slv!4v1721049211560!5m2!1sru!2slv" 
+          width="100%" height="250" style="border:0; border-radius:12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <br>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=Balvu+iela+1C%2C+Daugavpils%2C+LV-5401" target="_blank" class="map-button" data-i18n="map.route">
+          Построить маршрут
+        </a>
+      </div>
+    </div>
+  </section>
 
 
   <footer>
@@ -231,6 +191,8 @@
       <a href="https://www.facebook.com/profile.php?id=61576771934951">Facebook</a>
     </div>
   </footer>
+
+
 
   <div id="success-popup" style="
   display: none;
@@ -272,7 +234,7 @@ function changeSlide(direction, btn) {
       "nav.clean_union": "Clean Union",
 
       "hero.title": "Чистота, Блеск, Уход",
-      "hero.subtitle": "Мобильный детейлинг и химчистка прямо у вас под окном",
+      "hero.subtitle": "Профессиональные детейлинг услуги для вашего авто! Детейлинг, который говорит за тебя!",
       "hero.button": "Записаться в WhatsApp",
       "services.title": "Наши услуги",
       "services.wash": "Мойка кузова",
@@ -322,7 +284,7 @@ function changeSlide(direction, btn) {
 "nav.clean_union": "Clean Union",
 
 "hero.title": "Tīrība, Spīdums, Kopšana",
-"hero.subtitle": "Mobilais detaļings un salona tīrīšana pie jūsu loga",
+"hero.subtitle": "Profesionāli detailēšanas pakalpojumi jūsu automašīnai! Detailing, kas runā jūsu vietā!",
 "hero.button": "Pieteikties WhatsApp",
       "services.title": "Mūsu pakalpojumi",
       "services.wash": "Virsbūves mazgāšana",
@@ -371,7 +333,7 @@ function changeSlide(direction, btn) {
 "nav.clean_union": "Clean Union",
 
 "hero.title": "Cleanliness, Shine, Care",
-"hero.subtitle": "Mobile detailing and interior cleaning right outside your window",
+"hero.subtitle": "Professional detailing services for your car! Detailing that speaks for you!",
 "hero.button": "Book via WhatsApp",
       "services.title": "Our Services",
       "services.wash": "Body Wash",
